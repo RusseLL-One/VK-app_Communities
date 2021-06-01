@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">F_app</string>
+    <integer name="com_vk_sdk_AppId">7331881</integer>
+    <string name="item_details_last_news">Последняя запись %s</string>
+    <string name="btn_leave_text">Отписаться   %d</string>
+    <string name="leave_dialog_title">Подтверждение</string>
+    <string name="leave_dialog_message">Вы действительно хотите покинуть выбранные сообщества?</string>
+    <string name="leave_dialog_yes">Да</string>
+    <string name="leave_dialog_cancel">Отмена</string>
+    <plurals name="followers_plural">
+        <item quantity="one">%s подписчик</item>
+        <item quantity="few">%s подписчика</item>
+        <item quantity="many">%s подписчиков</item>
+    </plurals>
+    <plurals name="friends_plural">
+        <item quantity="one">%s друг</item>
+        <item quantity="few">%s друга</item>
+        <item quantity="many">%s друзей</item>
+    </plurals>
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="@dimen/default_margin"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        tools:text="Happy Santa" />
+
+                    <ImageView
+                        android:id="@+id/img_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:minWidth="@dimen/min_button_size"
+                        android:minHeight="@dimen/min_button_size"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_dismiss_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:alpha="0.4"
+                        android:src="@drawable/ic_followers_outline_20" />
+
+                    <TextView
+                        android:id="@+id/txt_followers_count"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="@dimen/default_margin"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="15sp"
+                        tools:text="188,2K подписчиков · 119 друзей" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/article_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:alpha="0.4"
+                        android:src="@drawable/ic_article_outline_20" />
+
+                    <TextView
+                        android:id="@+id/txt_article"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="@dimen/default_margin"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="15sp"
+                        tools:text="Разрабатываем приложения для вас и ваших друзей с 2011 года." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:alpha="0.4"
+                        android:src="@drawable/ic_newsfeed_outline_20" />
+
+                    <TextView
+                        android:id="@+id/txt_last_post_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="@dimen/default_margin"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="15sp"
+                        tools:text="Последняя запись 8 февраля" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_open"
+                    style="@style/BlueButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_margin"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="@dimen/default_margin"
+                    android:layout_marginBottom="24dp"
+                    android:text="Открыть" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>

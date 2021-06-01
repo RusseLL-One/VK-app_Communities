@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true">
+        <objectAnimator
+            android:duration="200"
+            android:propertyName="layout_height"
+            android:valueTo="wrap_content" />
+    </item>
+
+    <item>
+        <objectAnimator
+            android:duration="200"
+            android:propertyName="layout_height"
+            android:valueTo="0dp"
+            android:valueType="floatType" />
+    </item>
+
+</selector>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="UseCompoundDrawables">
+
+    <FrameLayout
+        android:id="@+id/img_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border="true"
+            app:civ_border_color="#15000000"
+            app:civ_border_width="1dp"
+            app:civ_shadow="false"
+            app:civ_shadow_radius="0dp" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/img_selection"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/item_selection"
+        app:layout_constraintBottom_toBottomOf="@id/img_container"
+        app:layout_constraintEnd_toEndOf="@id/img_container"
+        app:layout_constraintStart_toStartOf="@id/img_container"
+        app:layout_constraintTop_toTopOf="@id/img_container" />
+
+    <ImageView
+        android:id="@+id/img_checkmark"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ic_check_circle_28"
+        app:layout_constraintBottom_toBottomOf="@id/img_container"
+        app:layout_constraintEnd_toEndOf="@id/img_container" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/selection_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="img_selection,img_checkmark"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_container"
+        tools:text="Совхоз имени Ленина" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
